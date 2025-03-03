@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPulse - Find Your Dream Job</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><img src="https://via.placeholder.com/30x30" alt="Logo"> CareerPulse</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="#">Internships</a></li>
+                    <li><a href="#">Roadmaps</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-outline">Log in</button>
+                <button class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream Job</h1>
+            <p>Discover thousands of career opportunities in the tech industry, filtered to match your skills and preferences.</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="job-search" placeholder="Job Title, Keywords, or Company">
+                    <input type="text" id="location-search" placeholder="Location">
+                    <button class="btn btn-primary search-btn">
+                        <i class="fas fa-search"></i> Search Jobs
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Active Jobs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Job Seekers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8,500+</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Job Categories</h2>
+                <p>Browse jobs by category to find the perfect role for your skills and experience</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="feature-title">Software Development</h3>
+                    <p class="feature-description">Explore opportunities in web, mobile, and desktop application development.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">Artificial Intelligence</h3>
+                    <p class="feature-description">Find roles in machine learning, deep learning, and AI research.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Data Science</h3>
+                    <p class="feature-description">Discover positions in data analysis, visualization, and big data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="feature-title">Cloud Computing</h3>
+                    <p class="feature-description">Explore roles in cloud architecture, DevOps, and infrastructure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Cybersecurity</h3>
+                    <p class="feature-description">Find positions in security analysis, penetration testing, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="feature-title">Product Management</h3>
+                    <p class="feature-description">Discover roles in product development, strategy, and leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="job-listings">
+        <div class="container">
+            <h2 class="section-title">Latest Job Opportunities</h2>
+            <div class="job-count"><span id="job-count">1,284</span> jobs found matching your criteria</div>
+            <div id="job-list" class="job-list">
+                <!-- Job listings will be inserted here by JavaScript -->
+            </div>
+            <div class="pagination">
+                <button id="load-more" class="btn btn-outline">Load More Jobs</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CareerPulse</h3>
+                    <p>Find your dream job with our comprehensive job listing platform.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="#">Internships</a></li>
+                        <li><a href="#">Roadmaps</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@careerpulse.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CareerPulse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Templates for components -->
+    <template id="job-card-template">
+        <div class="job-card">
+            <div class="job-card-header">
+                <div class="company-logo">
+                    <img src="" alt="Company Logo">
+                </div>
+                <div class="job-card-title">
+                    <h3 class="job-title"></h3>
+                    <div class="company-name"></div>
+                </div>
+                <div class="job-card-bookmark">
+                    <button class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="job-card-body">
+                <div class="job-details">
+                    <span class="job-location"><i class="fas fa-map-marker-alt"></i> <span class="location-text"></span></span>
+                    <span class="job-type"><i class="fas fa-briefcase"></i> <span class="type-text"></span></span>
+                    <span class="job-salary"><i class="fas fa-money-bill-wave"></i> <span class="salary-text"></span></span>
+                </div>
+                <div class="job-description"></div>
+                <div class="job-tags">
+                    <!-- Tags will be inserted here -->
+                </div>
+            </div>
+            <div class="job-card-footer">
+                <div class="posted-date"></div>
+                <a href="#" class="btn btn-primary apply-btn">Apply Now</a>
+            </div>
+        </div>
+    </template>
+
+    <!-- JavaScript files -->
+    <script src="./js/components/JobCard.js"></script>
+    <script src="./js/components/FilterComponent.js"></script>
+    <script src="./js/services/JobService.js"></script>
+    <script src="./js/components/HomepageJobAdapter.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
