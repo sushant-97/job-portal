@@ -1,3 +1,3 @@
 # Job Portal
 
-A brief description of your project.
+Job seeker focused job portal
